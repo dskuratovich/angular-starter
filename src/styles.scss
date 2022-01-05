@@ -1,0 +1,11 @@
+/* https://meyerweb.com/eric/tools/css/reset/ */
+@use "reset-css";
+
+/* a custom styles framework, contains a minimal set of required styles definitions for starting development */
+@use "framework";
+
+/* a set of global styles */
+html,
+body {
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}

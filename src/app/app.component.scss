@@ -1,0 +1,23 @@
+$welcome-icon-size: 200px;
+
+.app {
+  .welcome-icon {
+    width: $welcome-icon-size;
+    height: $welcome-icon-size;
+  }
+
+  .welcome-message {
+    font-size: 26px;
+  }
+
+  .directories-structure,
+  .explanations {
+    margin-top: 50px;
+  }
+
+  .directories {
+    &-item {
+      margin: 10px 0;
+    }
+  }
+}

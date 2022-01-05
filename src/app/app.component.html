@@ -1,0 +1,43 @@
+<div class="app d-flex flex-column flex-gap-1 flex-ai-center flex-jc-center">
+  <img class="welcome-icon" src="favicon.svg" alt="Angular Starter" />
+  <h1 class="welcome-message fw-bold">
+    <!-- an example of translations usage -->
+    {{ "welcome" | translate }}
+  </h1>
+
+  <div class="directories-structure">
+    Please consider putting your files into the following directories:
+
+    <ul class="directories">
+      <li class="directories-item">
+        <div class="directories-item-name fw-bold">"src/app/components"</div>
+        <div class="directories-item-description fs-italic">components directory</div>
+      </li>
+
+      <li class="directories-item">
+        <div class="directories-item-name fw-bold">"src/app/consts"</div>
+        <div class="directories-item-description fs-italic">constants directory</div>
+      </li>
+
+      <li class="directories-item">
+        <div class="directories-item-name fw-bold">"src/app/entities"</div>
+        <div class="directories-item-description fs-italic">entities directory, eg models for API, external
+          responses, etc
+        </div>
+      </li>
+
+      <li class="directories-item">
+        <div class="directories-item-name fw-bold">"src/app/styles"</div>
+        <div class="directories-item-description fs-italic">a common directory for global app styles; by default,
+          it contains default custom styles
+        </div>
+      </li>
+    </ul>
+
+    <div class="explanations">
+      All the given directories needs to be used as <span class="fw-bold">@app/consts/lang.const</span> or <span
+        class="fw-bold">@app/components/button.component</span>, for instance. <br />
+      Necessary settings are already added to the tsconfig file for it.
+    </div>
+  </div>
+</div>
