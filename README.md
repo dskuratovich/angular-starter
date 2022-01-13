@@ -22,6 +22,12 @@ The starter contains the following additional packages:
 * [ngx-translate](https://www.npmjs.com/package/@ngx-translate/core)  
   a package for having strings translation in the app
 
+* [ngxs-store](https://www.ngxs.io/)  
+  a redux store manager
+
+* [ngxs-devtools](https://github.com/reduxjs/redux-devtools/tree/main/extension)  
+  a plugin that allows to see an actual store in the browser
+
 ## Scripts ##
 
 In the starter you can use already predefined scripts

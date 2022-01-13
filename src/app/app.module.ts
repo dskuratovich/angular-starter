@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { NgxsModule } from '@ngxs/store';
+import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
+import { environment } from 'src/environments/environment';
 
 const createTranslateLoader = (http: HttpClient): TranslateHttpLoader => {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -29,6 +32,12 @@ const createTranslateLoader = (http: HttpClient): TranslateHttpLoader => {
           HttpClient,
         ],
       },
+    }),
+    NgxsModule.forRoot([], {
+      developmentMode: !environment.production,
+    }),
+    NgxsReduxDevtoolsPluginModule.forRoot({
+      disabled: environment.production,
     }),
   ],
   bootstrap: [
