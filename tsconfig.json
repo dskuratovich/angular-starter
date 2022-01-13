@@ -31,6 +31,9 @@
       ],
       "@app/entities/*": [
         "src/app/entities/*"
+      ],
+      "@app/store/*": [
+        "src/app/store/*"
       ]
     }
   },
